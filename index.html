@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog CMS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 My Blog CMS</h1>
+
+    <!-- Blog form -->
+    <form id="blogForm">
+      <input type="text" id="title" placeholder="Blog Title" required />
+      <textarea id="content" placeholder="Write your blog here..." required></textarea>
+      <button type="submit">➕ Add Blog</button>
+    </form>
+
+    <!-- Live Preview -->
+    <div id="preview" class="preview">
+      <h2>👀 Live Preview</h2>
+      <h3 id="previewTitle">[Title]</h3>
+      <p id="previewContent">[Content will appear here...]</p>
+    </div>
+
+    <hr>
+
+    <!-- Search bar -->
+    <input type="text" id="search" placeholder="🔍 Search blogs..." />
+
+    <!-- Blog list -->
+    <h2>📚 All Blogs</h2>
+    <div id="blogs"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
